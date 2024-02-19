@@ -1,0 +1,102 @@
+  <div class="home-wrapper">
+  
+  <mat-tab-group mat-align-tabs="start">
+  <mat-tab label="Matches">
+
+  </mat-tab>
+  <mat-tab label="Second">Content 2</mat-tab>
+  <mat-tab label="Third"></mat-tab>
+</mat-tab-group>
+
+<div class="col-12">
+  <div class="mobileDatePicker">
+    <div class="cdk-virtual-scroll-data-source-example">
+      <cdk-virtual-scroll-viewport #scroll_div orientation="horizontal" itemSize="60"
+        minBufferPx="400" maxBufferPx="1000" class="example-viewport"
+        (scrolledIndexChange)="changeMonth($event)">
+        <div id="content_div" *cdkVirtualFor="let item of items; let i=index" class="example-item">
+          <div class="item" id="{{item}}" (click)="select(item)"
+            [ngClass]="{'is-active':item===selectedItem}">
+            <span class="weekName">{{returnWeekDay(item)}}</span>
+            <span> {{item | date:'d'}}</span>
+          </div>
+        </div>
+      </cdk-virtual-scroll-viewport>
+    </div>
+  </div>
+</div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- <div class="rowww">
+    <div class="" *ngFor="let live of liveMatchesData">
+      <div class="col-auto">
+        <div class="card card1 text-black mb-3">
+          <div class="card-header">
+            <div class="row">
+              <div class="col">
+                <p class="font-size-22 mb-0 fw-600 home-letterspace">{{live.tournamentName}}</p>
+              </div>
+              <div class="col-auto">
+                <small class="card-header3"></small>LIVE
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-12">
+                <div class="row d-flex align-items-center">
+                  <div class="col-4 text-start">
+                    <img src="/assets/Images/england.png" class="img-fluid" width="41">
+                    <p class="font-size-14 fw-600 home-letterspace">England</p>
+                  </div>
+                  <div class="col-4 text-center">
+                    <small class="blacktext font-size-14 fw-600 home-letterspace">SA
+                      43/1* </small>
+                    <p><span class="greytext fw-600 me-1" style="font-size: 10px;">{{live.displayScoreOver.awayDisplayOver}}</span></p>
+                  </div>
+                  <div class="col-4 text-end">
+                    <img src="/assets/Images/newzealand.png" class="img-fluid" width="41">
+                    <p class="font-size-14 fw-600 home-letterspace">
+                      South
+                      Africa
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12  text-center">
+                <small class="fw-600 card-footer1" style="font-size: 10px;">Test
+                  Series England Vs South
+                  Africe</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     </div> -->

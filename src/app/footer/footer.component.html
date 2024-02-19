@@ -1,0 +1,50 @@
+<div class="navigation">
+    <ul class="listWrap">
+        <li class="list" (click)="routerNavigation('news')" [ngClass]="{'selected':currentPath==='news'}">
+            <span>
+                <div class="icon">
+                    <img src="../../assets/icons/footer-news-option.svg" alt="">
+                </div>
+                <span class="text mt-2">Breaking News</span>
+            </span>
+        </li>
+
+        <li class="list" (click)="routerNavigation('favourite')" [ngClass]="{'selected':currentPath==='favourite'}">
+            <span>
+                <div class="icon">
+                    <img src="../../assets/icons/footer-favourite-option.svg" alt="">
+                </div>
+                <span class="text mt-2">ICC Rankings</span>
+            </span>
+        </li>
+
+        <li class="list" (click)="routerNavigation('home')" [ngClass]="{'selected':currentPath==='home'}">
+            <span class="">
+                <div class="icon">
+                    <img src="../../assets/icons/footer-home-option.svg" alt="">
+                    <span class="text mt-2">Home</span>
+                </div>
+            </span>
+        </li>
+
+        <li class="list" (click)="routerNavigation('expert-analysis')" [ngClass]="{'selected':currentPath==='expert-analysis'}">
+            <span>
+                <div class="icon">
+                    <img src="../../assets/icons/footer-video-icon.svg" alt="">
+                </div>
+                <span class="text mt-2">Video</span>
+            </span>
+        </li>
+
+
+        <li class="list" (click)="routerNavigation('more')" [ngClass]="{'selected':currentPath==='more'}">
+            <span>
+                <div class="icon">
+                    <img src="../../assets/icons/footer-more-option.svg" alt="">
+                </div>
+                <span class="text mt-2">More</span>
+            </span>
+        </li>
+
+    </ul>
+</div>
